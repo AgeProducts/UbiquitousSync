@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11535.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="UbiquitousSyncMac"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="HXe-Sr-LVl" customClass="MenuController" customModule="UbiquitousSyncMac">
+            <connections>
+                <outlet property="menu" destination="yBy-PA-cwX" id="dac-OI-t4T"/>
+                <outlet property="minusMenuItem" destination="LaP-ya-toN" id="xQg-am-lGy"/>
+                <outlet property="plusMenuItem" destination="YfM-bN-bd9" id="a8J-0V-dK6"/>
+                <outlet property="restMenuItem" destination="WgV-S1-9zM" id="nUl-GO-KSn"/>
+            </connections>
+        </customObject>
+        <menu id="yBy-PA-cwX">
+            <items>
+                <menuItem title="+ Plus" id="YfM-bN-bd9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="plusAction:" target="HXe-Sr-LVl" id="Rl1-1b-ig7"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reset" id="WgV-S1-9zM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="resetActiom:" target="HXe-Sr-LVl" id="d4A-EQ-JE8"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="- Minus" id="LaP-ya-toN">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="minusAction:" target="HXe-Sr-LVl" id="83Z-eu-jeM"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="89k-cq-GcL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitAction:" target="HXe-Sr-LVl" id="KnA-3w-qoz"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>

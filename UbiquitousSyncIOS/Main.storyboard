@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l0C-7b-fD5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="PTp-3Y-naJ">
+            <objects>
+                <viewController id="l0C-7b-fD5" customClass="ViewController" customModule="UbiquitousSyncDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jjR-QM-x6n"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKO-4V-Bvq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EfS-Ox-Nqp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-aP-waW">
+                                <rect key="frame" x="200" y="250" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ZmU-lk-mLM"/>
+                                    <constraint firstAttribute="width" constant="200" id="fZL-g3-v3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoZ-60-5ud">
+                                <rect key="frame" x="260" y="520" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0XQ-zY-fx7"/>
+                                    <constraint firstAttribute="width" constant="80" id="tzG-vB-uov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzx-7e-38u">
+                                <rect key="frame" x="500" y="520" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IfH-Qo-IgJ"/>
+                                    <constraint firstAttribute="width" constant="80" id="UcO-dC-IWy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hEr-ai-w1u"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="l3F-9c-7Kk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Di-QO-Rqx">
+                                <rect key="frame" x="20" y="520" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="8cP-Nr-g0r"/>
+                                    <constraint firstAttribute="width" constant="80" id="Alc-Cd-7m7"/>
+                                    <constraint firstAttribute="height" constant="60" id="Po9-IH-gbS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="uTo-0W-bmO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Di-QO-Rqx" firstAttribute="leading" secondItem="EfS-Ox-Nqp" secondAttribute="leadingMargin" id="8qD-xa-Ep0"/>
+                            <constraint firstItem="KoZ-60-5ud" firstAttribute="centerX" secondItem="EfS-Ox-Nqp" secondAttribute="centerX" id="Bsn-mJ-DC7"/>
+                            <constraint firstItem="GKO-4V-Bvq" firstAttribute="top" secondItem="1Di-QO-Rqx" secondAttribute="bottom" constant="20" id="MAo-gn-evp"/>
+                            <constraint firstItem="Fzx-7e-38u" firstAttribute="trailing" secondItem="EfS-Ox-Nqp" secondAttribute="trailingMargin" id="dFY-YL-cJ0"/>
+                            <constraint firstItem="rHD-aP-waW" firstAttribute="centerY" secondItem="EfS-Ox-Nqp" secondAttribute="centerY" id="fBR-bK-X4t"/>
+                            <constraint firstItem="GKO-4V-Bvq" firstAttribute="top" secondItem="KoZ-60-5ud" secondAttribute="bottom" constant="20" id="fFJ-Wh-W3U"/>
+                            <constraint firstItem="GKO-4V-Bvq" firstAttribute="top" secondItem="Fzx-7e-38u" secondAttribute="bottom" constant="20" id="g4L-a1-lw9"/>
+                            <constraint firstItem="rHD-aP-waW" firstAttribute="centerX" secondItem="EfS-Ox-Nqp" secondAttribute="centerX" id="jkf-03-ESH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="minusButton" destination="1Di-QO-Rqx" id="sPx-Fi-Xtc"/>
+                        <outlet property="numLabel" destination="rHD-aP-waW" id="Qlu-q6-pKW"/>
+                        <outlet property="plusButton" destination="Fzx-7e-38u" id="xbh-BD-DAP"/>
+                        <outlet property="resetButton" destination="KoZ-60-5ud" id="oez-Uf-uYG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxu-2S-kdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="366"/>
+        </scene>
+    </scenes>
+</document>
