@@ -20,26 +20,28 @@ if necessary...
 
 ## Demo project
 ###Install
-1. Settings AppID and iCloud container (Apple Developer site : Certificates, Identifiers & Profiles). Refer to [PrefsInCloud](https://developer.apple.com/library/content/samplecode/PrefsInCloud/Introduction/Intro.html "PrefsInCloud").
-2. $cd UbiquitousSyncDemo
-3. $pod install
-4. tap “UbiquitousSyncDemo.xcworkspace”
-5. TARGET -> UbiquitousSyncIOS -> “General tab”
- - Identify -> Build Identifier : \"**com.YourCompany**.UbiquitousSyncIOS”   　change to your company identifier.
- - Singing -> Team : \"**None**"    set your development team.
-6. TARGET -> UbiquitousSyncIOS -> “Capabilities tab”
- - iCloud -> Services : ✔︎ Key-values storage and iCloud Documents
- - Containers : ✔︎ your iCloud container name (e.g. iCloud.com.yourcompany.UbiquitousSyncDemo)
-7. UbiquitousSyncIOS.entitlements
- - iCloud Key-Value Store : \"$(TeamIdentifierPrefix) **$(CFBundleIdentifier)**”  　change to your iCloud container name.
-8. Build and Run TARGET.
-9. Change TARGET -> UbiquitousSyncMac and same OP item 5-8.
+
+1. $cd UbiquitousSyncDemo
+2. $pod install
+3. tap “UbiquitousSyncDemo.xcworkspace”
+4. TARGET -> UbiquitousSyncIOS -> “General tab”
+ - Identify -> Build Identifier : "**com.YourCompany**.UbiquitousSyncIOS”   　change to your company identifier.
+ - Singing -> Team : "**None**"    set your development team.
+5. TARGET -> UbiquitousSyncIOS -> “Capabilities tab”
+ - Turn on switch.
+ - iCloud -> Services : ✔︎ Key-values storage
+ - Containers : ✔︎ your iCloud container name (e.g. iCloud.com.YourCompany.UbiquitousSyncStore)
+6. UbiquitousSyncIOS.entitlements
+ - iCloud Key-Value Store : "$(TeamIdentifierPrefix) **$(CFBundleIdentifier)**”  　change to your iCloud container name (e.g. com.YourCompany.UbiquitousSyncStore).
+7. Build and Run TARGET.
+8. Change TARGET -> UbiquitousSyncMac and same OP item 4-7.
+9. Settings AppID and iCloud container (Apple Developer site : Certificates, Identifiers & Profiles). Refer to [PrefsInCloud](https://developer.apple.com/library/content/samplecode/PrefsInCloud/Introduction/Intro.html "PrefsInCloud"). 
 
 ### Note
 - Demo PJ was developed in Xcode8.1 bate3.
 - iOS 9.3.5, iOS 10.1 and macOS Sierra 10.12.1 beta 3 (Build:16B2338c) were confirmed. All is a real machine.
 - macOS 10.12 (Build:16A323) does not work with. Please be careful!
-- In the iOS simulator, work single direction (simulator -> real).
+- This demo will not work in the simulator.
 
 
 ## Credits
