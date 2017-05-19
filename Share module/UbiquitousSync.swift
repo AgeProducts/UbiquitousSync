@@ -151,7 +151,7 @@ class UbiquitousSync {
         }
         if cloud == true {
             if iCloudStore.synchronize() == false {
-                NSLog("removeiCloudItems4Debug: iCloud synchronize error")      // macOS Sierra 10.12 (Build:16A323), Always error!!!  10.12.1 beta 3 (Build:16B2338c) later OK.
+                NSLog("removeiCloudItems4Debug: iCloud synchronize error")
             }
             // assert(iCloudStore.synchronize(), "removeiCloudItems4Debug: iCloud synchronize error")
         }

@@ -22,9 +22,13 @@
 		426AB72C1DBC07A100A56C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426AB7271DBC07A100A56C24 /* Main.storyboard */; };
 		426AB72D1DBC07A100A56C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AB7281DBC07A100A56C24 /* ViewController.swift */; };
 		426AB72F1DBC07DA00A56C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426AB72E1DBC07DA00A56C24 /* Assets.xcassets */; };
+		56BF187807CD703F8F1A3A79 /* Pods_UbiquitousSyncMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200F5218B18DB7DB1B0A74 /* Pods_UbiquitousSyncMac.framework */; };
+		B947744B35003DF8B2B94951 /* Pods_UbiquitousSyncIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EDB58D652764408A9A0301 /* Pods_UbiquitousSyncIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08EDB58D652764408A9A0301 /* Pods_UbiquitousSyncIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UbiquitousSyncIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E200F5218B18DB7DB1B0A74 /* Pods_UbiquitousSyncMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UbiquitousSyncMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42594A801DA88DBF008BD9D5 /* UbiquitousSyncMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbiquitousSyncMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42594A971DA892AA008BD9D5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = "Share module/Common.swift"; sourceTree = "<group>"; };
 		426AB7151DBB0C7C00A56C24 /* UbiquitousSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UbiquitousSync.swift; path = "Share module/UbiquitousSync.swift"; sourceTree = "<group>"; };
@@ -41,7 +45,11 @@
 		426AB7271DBC07A100A56C24 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UbiquitousSyncIOS/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		426AB7281DBC07A100A56C24 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UbiquitousSyncIOS/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		426AB72E1DBC07DA00A56C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = UbiquitousSyncIOS/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		42A6D3029DAA1581DD2ACE14 /* Pods-UbiquitousSyncMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbiquitousSyncMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UbiquitousSyncMac/Pods-UbiquitousSyncMac.debug.xcconfig"; sourceTree = "<group>"; };
 		42DCFC201D49925500CCCC9E /* UbiquitousSyncDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbiquitousSyncDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D340124DAC209F7F78CB32 /* Pods-UbiquitousSyncIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbiquitousSyncIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UbiquitousSyncIOS/Pods-UbiquitousSyncIOS.release.xcconfig"; sourceTree = "<group>"; };
+		B2D4F953EA617C12B1AEC771 /* Pods-UbiquitousSyncIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbiquitousSyncIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UbiquitousSyncIOS/Pods-UbiquitousSyncIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0E77BE56A0F33396AAE7F2 /* Pods-UbiquitousSyncMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbiquitousSyncMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-UbiquitousSyncMac/Pods-UbiquitousSyncMac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BF187807CD703F8F1A3A79 /* Pods_UbiquitousSyncMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B947744B35003DF8B2B94951 /* Pods_UbiquitousSyncIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,8 @@
 				42DCFC221D49925500CCCC9E /* UbiquitousSyncIOS */,
 				42594A811DA88DBF008BD9D5 /* UbiquitousSyncMac */,
 				42DCFC211D49925500CCCC9E /* Products */,
+				EED8BE732973710BE85AC3A5 /* Pods */,
+				DA86AC7B79E8ACA3DB7F9550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +129,26 @@
 			);
 			name = UbiquitousSyncIOS;
 			path = CloudSyncDemoIOS;
+			sourceTree = "<group>";
+		};
+		DA86AC7B79E8ACA3DB7F9550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EDB58D652764408A9A0301 /* Pods_UbiquitousSyncIOS.framework */,
+				3E200F5218B18DB7DB1B0A74 /* Pods_UbiquitousSyncMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED8BE732973710BE85AC3A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2D4F953EA617C12B1AEC771 /* Pods-UbiquitousSyncIOS.debug.xcconfig */,
+				71D340124DAC209F7F78CB32 /* Pods-UbiquitousSyncIOS.release.xcconfig */,
+				42A6D3029DAA1581DD2ACE14 /* Pods-UbiquitousSyncMac.debug.xcconfig */,
+				FB0E77BE56A0F33396AAE7F2 /* Pods-UbiquitousSyncMac.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +218,7 @@
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 1;
@@ -251,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1CDEDB473A009C5835F18D4A /* [CP] Copy Pods Resources */ = {
@@ -311,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D875055E3ABE208FFC2B3B69 /* [CP] Copy Pods Resources */ = {
@@ -359,6 +391,7 @@
 /* Begin XCBuildConfiguration section */
 		42594A8C1DA88DBF008BD9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A6D3029DAA1581DD2ACE14 /* Pods-UbiquitousSyncMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -369,7 +402,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UbiquitousSyncMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.UbiquitousSyncMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -380,6 +413,7 @@
 		};
 		42594A8D1DA88DBF008BD9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0E77BE56A0F33396AAE7F2 /* Pods-UbiquitousSyncMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -390,7 +424,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UbiquitousSyncMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.UbiquitousSyncMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -437,8 +471,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -479,8 +513,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -490,6 +524,7 @@
 		};
 		42DCFC331D49925500CCCC9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D4F953EA617C12B1AEC771 /* Pods-UbiquitousSyncIOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -498,6 +533,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UbiquitousSyncIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.UbiquitousSyncIOS;
 				PRODUCT_NAME = UbiquitousSyncDemo;
@@ -508,6 +544,7 @@
 		};
 		42DCFC341D49925500CCCC9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D340124DAC209F7F78CB32 /* Pods-UbiquitousSyncIOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -516,6 +553,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UbiquitousSyncIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.UbiquitousSyncIOS;
 				PRODUCT_NAME = UbiquitousSyncDemo;

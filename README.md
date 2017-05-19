@@ -28,7 +28,7 @@ if necessary...
  - Identify -> Build Identifier : "**com.YourCompany**.UbiquitousSyncIOS”   　change to your company identifier.
  - Singing -> Team : "**None**"    set your development team.
 5. TARGET -> UbiquitousSyncIOS -> “Capabilities tab”
- - Turn on switch.
+ - Turn on iCloud switch.
  - iCloud -> Services : ✔︎ Key-values storage
  - Containers : ✔︎ your iCloud container name (e.g. iCloud.com.YourCompany.UbiquitousSyncStore)
 6. UbiquitousSyncIOS.entitlements
