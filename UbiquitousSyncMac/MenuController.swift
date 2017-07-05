@@ -70,7 +70,7 @@ class MenuController:  NSObject {
     }
     
     @IBAction func quitAction(_ sender: AnyObject) {
-        NSApplication.shared().terminate(self)
+        NSApplication.shared.terminate(self)
     }
 }
 
