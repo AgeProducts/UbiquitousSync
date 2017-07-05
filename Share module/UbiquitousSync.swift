@@ -19,7 +19,7 @@ class UbiquitousSync {
         
         NSLog("updateToiCloud:notificationObject -->> To iClod")
         
-        let iCloudStore = NSUbiquitousKeyValueStore.default()
+        let iCloudStore = NSUbiquitousKeyValueStore.default
         let localStore = UserDefaults.standard
         let dict = localStore.dictionaryRepresentation()
         var changeKeys:[String] = []
@@ -53,7 +53,7 @@ class UbiquitousSync {
         
         NSLog("updateFromiCloud:notificationObject -->> To macOS/iOS")
         
-        let iCloudStore = NSUbiquitousKeyValueStore.default()
+        let iCloudStore = NSUbiquitousKeyValueStore.default
         let localStore = UserDefaults.standard
         let dict = iCloudStore.dictionaryRepresentation
         var changeKeys:[String] = []
@@ -98,7 +98,7 @@ class UbiquitousSync {
 
         if restore == true {
             
-            let iCloudStore = NSUbiquitousKeyValueStore.default()
+            let iCloudStore = NSUbiquitousKeyValueStore.default
             let localStore = UserDefaults.standard
             let dict = iCloudStore.dictionaryRepresentation
             var changeKeys:[String] = []
@@ -129,31 +129,30 @@ class UbiquitousSync {
     }
     
     static func removeiCloudItems4Debug(_ prefix:String = iCloud_Prefix, cloud:Bool, local:Bool) {
-        
-        let iCloudStore = NSUbiquitousKeyValueStore.default()
-        let localStore = UserDefaults.standard
-        let dict = iCloudStore.dictionaryRepresentation
-        
-        dict.keys.forEach {
-            if $0.hasPrefix(prefix) {
-                if cloud {
+        if cloud == true {
+            let iCloudStore = NSUbiquitousKeyValueStore.default
+            let dict = iCloudStore.dictionaryRepresentation
+            dict.keys.forEach {
+                if $0.hasPrefix(prefix) {
                     NSLog("removeiCloudItems4Debug: remove iCloudStore item \($0). for DEBUG!!")
                     iCloudStore.removeObject(forKey: $0)
                 }
-                if local {
-                    NSLog("removeiCloudItems4Debug: remove localStore item \($0). for DEBUG!!")
-                    localStore.removeObject(forKey: $0)
-                }
             }
-        }
-        if local == true {
-            assert(localStore.synchronize(), "removeiCloudItems4Debug: local synchronize error")
-        }
-        if cloud == true {
             if iCloudStore.synchronize() == false {
                 NSLog("removeiCloudItems4Debug: iCloud synchronize error")
             }
             // assert(iCloudStore.synchronize(), "removeiCloudItems4Debug: iCloud synchronize error")
+        }
+        if local == true {
+            let localStore = UserDefaults.standard
+            let dict = localStore.dictionaryRepresentation()
+            dict.keys.forEach {
+                if $0.hasPrefix(prefix) {
+                    NSLog("removeiCloudItems4Debug: remove localStore item \($0). for DEBUG!!")
+                    localStore.removeObject(forKey: $0)
+                }
+            }
+            assert(localStore.synchronize(), "removeiCloudItems4Debug: local synchronize error")
         }
     }
     

@@ -29,23 +29,25 @@ class MenuController:  NSObject {
         // UbiquitousSync.removeiCloudItems4Debug(iCloud_Prefix, cloud: true, local: true)      // DEBUG
         UbiquitousSync.startWithPrefix(iCloud_Prefix, restore:true)
         
-        let statusBar = NSStatusBar.system()
+        let statusBar = NSStatusBar.system
         self.statusItem = statusBar.statusItem(withLength: CGFloat(60))
         self.statusItem.target = self;
         self.statusItem.action =  #selector(MenuController.showMenu)
         // showMenu()
 
-//        Common.sharedInstance.numberValue.asObservable().subscribeNext { _ in 
-//            self.statusItem.title = "#" + String(Common.sharedInstance.numberValue.value)
+//        Common.sharedInstance.numberValue.asObservable().subscribeNext { [weak self] _ in
+//            guard let wself = self else { return }
+//            wself.statusItem.title = "#" + String(Common.sharedInstance.numberValue.value)
 //        }
 //        .addDisposableTo(disposeBag)
         
-        Common.sharedInstance.numberValue.asObservable().subscribe(onNext: { [unowned self] _ in
-            self.statusItem.title = "#" + String(Common.sharedInstance.numberValue.value)
+        Common.sharedInstance.numberValue.asObservable().subscribe(onNext: { [weak self] _ in
+            guard let wself = self else { return }
+            wself.statusItem.title = "#" + String(Common.sharedInstance.numberValue.value)
             }).addDisposableTo(disposeBag)
     }
     
-    func showMenu() {
+    @objc func showMenu() {
         self.statusItem.popUpMenu(menu)
     }
 

@@ -32,21 +32,21 @@ class ViewController: UIViewController {
             .bindTo(numLabel.rx.text)
             .addDisposableTo(disposeBag)
         
-        plusButton.rx.tap.subscribe(onNext: {
+        plusButton.rx.tap.subscribe({ _ in
             Common.sharedInstance.numberValue.value += 1
             if Common.sharedInstance.numberValue.value > maxValue {
                 Common.sharedInstance.numberValue.value = maxValue
             }
         }).addDisposableTo(disposeBag)
         
-        minusButton.rx.tap.subscribe(onNext: {
+        minusButton.rx.tap.subscribe({ _ in
             Common.sharedInstance.numberValue.value -= 1
             if Common.sharedInstance.numberValue.value < -maxValue {
                 Common.sharedInstance.numberValue.value = -maxValue
             }
         }).addDisposableTo(disposeBag)
         
-        resetButton.rx.tap.subscribe(onNext: {
+        resetButton.rx.tap.subscribe({ _ in
             Common.sharedInstance.numberValue.value = 0
         }).addDisposableTo(disposeBag)
     }
@@ -55,7 +55,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
