@@ -38,9 +38,9 @@ if necessary...
 9. Settings AppID and iCloud container (Apple Developer site : Certificates, Identifiers & Profiles). Refer to [PrefsInCloud](https://developer.apple.com/library/content/samplecode/PrefsInCloud/Introduction/Intro.html "PrefsInCloud"). 
 
 ### Note
-- Demo PJ was developed in Xcode 8.3.2.
-- iOS 10.3,1 and macOS Sierra 10.12.4 were confirmed.
-- This demo will not work in the iOS simulator.
+- Demo PJ was developed in Xcode 9.0 beta 2.
+- iOS 10.3.2 (iPhone5), 11.0 (iOS simulator) and macOS 10.13 bata (High Sierra) were confirmed.
+- With iOS Simulator, this demo will work only in the simulator -> iCloud direction.
 
 ## Credits
 
